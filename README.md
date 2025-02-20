@@ -1,7 +1,7 @@
-# GEE Land Cover Masking and Temporal Analysis
+# Temporal Land Cover Vectorizer
 
 ## Overview
-This repository contains tools and scripts for processing and analyzing land cover changes using Google Earth Engine, SEPAL.io, and local processing tools. The workflow is designed to support baseline assessments for Verra carbon projects, with a focus on temporal land cover analysis from 2013 to 2023.
+This repository contains tools and scripts for processing and analyzing temporal land cover changes using SEPAL.io, Google Earth Engine, and Python. The workflow supports baseline assessments for Verra carbon projects by processing NDFI (Normalized Difference Fraction Index) data across multiple time periods (2013-2023).
 
 ## Workflow Diagram
 ```mermaid
@@ -98,8 +98,8 @@ your-repo/
 ### Installation
 1. Clone this repository:
 bash
-git clone https://github.com/ulfboge/gee-landcover-masking.git
-cd gee-landcover-masking
+git clone https://github.com/ulfboge/temporal-landcover-vectorizer.git
+cd temporal-landcover-vectorizer
 
 2. Install required Python packages:
 bash
