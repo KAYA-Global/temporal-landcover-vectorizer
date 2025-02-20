@@ -4,6 +4,8 @@
 This repository contains tools and scripts for processing and analyzing temporal land cover changes using SEPAL.io, Google Earth Engine, and Python. The workflow supports baseline assessments for Verra carbon projects by processing NDFI (Normalized Difference Fraction Index) data across multiple time periods (2013-2023).
 
 ## Workflow Diagram
+
+## Workflow Diagram
 ```mermaid
 graph TD
 A[Data Collection via sepal.io] -->|Landsat Imagery| B[Extract NDFI Band]
@@ -56,10 +58,14 @@ Supports Verra project requirements through:
 ## Repository Structure
 ### Recommended Structure
 ```text
-your-repo/
+temporal-landcover-vectorizer/
 ├── scripts/
-│ ├── raster_timeseries_vectorizer.py
-│ └── [other processing scripts]
+│ ├── python/
+│ │ ├── combine_rasters_colad.ipynb
+│ │ ├── rename_raster_bands_2013_2023.ipynb
+│ │ └── raster_timeseries_vectorizer.py
+│ └── gee/
+│ └── landcover_mask-js/
 ├── data/
 │ ├── input/
 │ │ └── raster/
@@ -73,9 +79,15 @@ your-repo/
 │ └── workflow_documentation.md
 └── README.md
 ```
+
 ### Directory Descriptions
 - `scripts/`: Contains all processing scripts
-  - `raster_timeseries_vectorizer.py`: Main script for converting raster to vector formats
+  - `python/`: Python scripts and notebooks for data processing
+    - `combine_rasters_colad.ipynb`: Notebook for combining raster data
+    - `rename_raster_bands_2013_2023.ipynb`: Notebook for renaming temporal bands
+    - `raster_timeseries_vectorizer.py`: Main script for converting raster to vector formats
+  - `gee/`: Google Earth Engine scripts
+    - `landcover_mask-js/`: JavaScript code for land cover masking in GEE
 - `data/`: All data files
   - `input/raster/`: Source raster files from SEPAL.io
   - `output/`: Generated files
@@ -93,7 +105,6 @@ your-repo/
   - GDAL
   - OGR
   - pandas
-  - [other dependencies]
 
 ### Installation
 1. Clone this repository:
@@ -110,7 +121,7 @@ pip install -r requirements.txt
 2. Process land cover masking in Google Earth Engine
 3. Run the vectorization script:
 bash
-python scripts/raster_timeseries_vectorizer.py
+python scripts/python/raster_timeseries_vectorizer.py
 
 ## Output Structure
 The vectorization script generates:
