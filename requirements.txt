@@ -1,0 +1,5 @@
+gdal
+pandas
+numpy
+geopandas
+rasterio
