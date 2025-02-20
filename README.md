@@ -4,8 +4,6 @@
 This repository contains tools and scripts for processing and analyzing temporal land cover changes using SEPAL.io, Google Earth Engine, and Python. The workflow supports baseline assessments for Verra carbon projects by processing NDFI (Normalized Difference Fraction Index) data across multiple time periods (2013-2023).
 
 ## Workflow Diagram
-
-## Workflow Diagram
 ```mermaid
 graph TD
 A[Data Collection via sepal.io] -->|Landsat Imagery| B[Extract NDFI Band]
