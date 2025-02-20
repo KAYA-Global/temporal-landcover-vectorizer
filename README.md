@@ -75,43 +75,39 @@ temporal-landcover-vectorizer/
 │ └── csv/
 ├── docs/
 │ └── workflow_documentation.md
-└── README.md
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ### Directory Descriptions
 - `scripts/`: Contains all processing scripts
-  - `python/`: Python scripts and notebooks for data processing
-    - `combine_rasters_colad.ipynb`: Notebook for combining raster data
-    - `rename_raster_bands_2013_2023.ipynb`: Notebook for renaming temporal bands
-    - `raster_timeseries_vectorizer.py`: Main script for converting raster to vector formats
-  - `gee/`: Google Earth Engine scripts
-    - `landcover_mask-js/`: JavaScript code for land cover masking in GEE
-- `data/`: All data files
-  - `input/raster/`: Source raster files from SEPAL.io
-  - `output/`: Generated files
-    - `raster/`: Processed raster files
-    - `vector/`: Generated vector files (points and polygons)
-    - `csv/`: Exported CSV data
-- `docs/`: Documentation files
+  [existing descriptions...]
+
+### Additional Files
+- `requirements.txt`: Lists all Python package dependencies
+- `.gitignore`: Specifies files that should not be tracked by Git
+  - Excludes data files, Python cache, and system files
+  - Keeps directory structure with .gitkeep files
 
 ## Setup and Usage
 ### Prerequisites
 - Google Earth Engine account
 - SEPAL.io access
 - Python 3.x
-- Required Python packages:
+- Required Python packages (installed via requirements.txt):
   - GDAL
-  - OGR
   - pandas
+  - numpy
+  - geopandas
+  - rasterio
 
 ### Installation
 1. Clone this repository:
-bash
 git clone https://github.com/ulfboge/temporal-landcover-vectorizer.git
 cd temporal-landcover-vectorizer
 
 2. Install required Python packages:
-bash
 pip install -r requirements.txt
 
 ### Usage
