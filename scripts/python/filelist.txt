@@ -1,1 +1,0 @@
-dir /b *.tif > filelist.txt
