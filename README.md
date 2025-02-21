@@ -35,8 +35,20 @@ F1 & F2 & F3 --> G[Verra Project Baseline Assessment]
 - Export multi-temporal raster data (2013-2023)
 
 ### 3. Vector Conversion and Analysis
+
+#### A. Combine Temporal Rasters
+The `combine_rasters_colab.ipynb` notebook combines yearly raster files into multi-band GeoTIFFs:
+- Input: Single-band GeoTIFF files for each year (2013-2023)
+- Processing:
+  - Automatically detects and groups raster files by area
+  - Combines temporal data into multi-band rasters
+  - Each band represents a specific year
+  - Maintains spatial properties and projection
+- Output: Multi-band GeoTIFF with temporal data
+
+#### B. Vector Conversion
 The `raster_timeseries_vectorizer.py` script processes the multi-temporal raster data:
-- Input: Multi-band GeoTIFF with 6 temporal bands (2013-2023)
+- Input: Multi-band GeoTIFF with temporal bands (2013-2023)
 - Processing:
   - Converts masked raster data to vector formats
   - Maintains temporal information
