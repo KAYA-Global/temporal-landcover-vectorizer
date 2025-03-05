@@ -42,7 +42,7 @@ polygons.evaluate(function(features) {
       // Export the masked image
       Export.image.toDrive({
         image: masked,
-        description: 'NDFI_Masked_' + year + '_' + areaNum,
+        description: 'NDVI_Masked_' + year + '_' + areaNum,
         scale: 100,
         region: geom,
         folder: 'earthengine',
