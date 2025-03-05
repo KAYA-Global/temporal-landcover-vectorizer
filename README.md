@@ -45,6 +45,23 @@ The `combine_rasters_colab.ipynb` notebook combines yearly raster files into mul
   - Each band represents a specific year
   - Maintains spatial properties and projection
 - Output: Multi-band GeoTIFF with temporal data
+- # Temporal Land Cover Vectorizer
+
+## Overview
+This repository contains tools and scripts for processing and analyzing temporal land cover changes using SEPAL.io, Google Earth Engine, and Python. The workflow supports baseline assessments for Verra carbon projects by processing NDFI (Normalized Difference Fraction Index) data across multiple time periods (2013-2023).
+
+## Workflow Diagram
+```mermaid
+graph TD
+A[Data Collection via sepal.io] -->|Landsat Imagery| B[Extract NDFI Band]
+B --> C[GEE Land Cover Masking]
+C --> D[Export Multi-temporal Raster]
+D --> E[raster_timeseries_vectorizer.py]
+E --> F1[Point Shapefiles]
+E --> F2[Polygon Shapefiles]
+E --> F3[CSV Data]
+F1 & F2 & F3 --> G[Verra Project Baseline Assessment]
+
 
 #### B. Vector Conversion
 The `raster_timeseries_vectorizer.py` script processes the multi-temporal raster data:
