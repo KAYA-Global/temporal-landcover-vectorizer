@@ -19,7 +19,7 @@ var images = {
 
 // Add visualization layers
 Map.addLayer(polygons, {color: 'blue'}, 'Original Polygons');
-Map.addLayer(landCoverMask.selfMask(), {palette: ['green']}, 'Land Cover Mask');
+Map.addLayer(landCoverMask.selfMask(), {palette: ['green']}, 'Land Cover Mask', false);
 
 // Center map on the area of interest
 Map.centerObject(polygons);
