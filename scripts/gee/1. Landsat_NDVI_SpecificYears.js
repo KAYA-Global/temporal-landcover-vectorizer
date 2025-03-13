@@ -86,8 +86,8 @@ years.forEach(function(year) {
   // Export the NDVI image as an asset at 100m resolution
   Export.image.toAsset({
     image: ndviImage,
-    description: 'NDVI_JanApr_' + year,
-    assetId: assetPath + 'NDVI_JanApr_' + year,
+    description: 'NDVI_JanMay_' + year,
+    assetId: assetPath + 'NDVI_JanMay_' + year,
     region: geometry,
     scale: 100,  // Export at 100m resolution
     maxPixels: 1e13
