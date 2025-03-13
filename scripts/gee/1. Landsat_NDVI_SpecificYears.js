@@ -68,7 +68,7 @@ var merged = L8.merge(L9).filter(ee.Filter.bounds(geometry));
 
 years.forEach(function(year) {
   var startDate = ee.Date.fromYMD(year, 1, 1);
-  var endDate = ee.Date.fromYMD(year, 4, 30);
+  var endDate = ee.Date.fromYMD(year, 5, 31);
   
   var yearFiltered = merged.filter(ee.Filter.date(startDate, endDate));
   var composite = yearFiltered.median().clip(geometry); // Median composite for Jan–Apr
