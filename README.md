@@ -67,7 +67,7 @@ For access to the data and detailed folder structure, see `docs/onedrive_setup.m
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/temporal-landcover-vectorizer.git
+git clone https://github.com/KAYA-Global/temporal-landcover-vectorizer.git
 cd temporal-landcover-vectorizer
 ```
 
@@ -110,4 +110,4 @@ earthengine authenticate
 5. Create a new Pull Request
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details. Copyright © 2024 KAYA-Global.
