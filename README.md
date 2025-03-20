@@ -17,7 +17,7 @@ temporal-landcover-vectorizer/
 │       ├── 6. extract_polygons.ipynb
 │       ├── 7. combine_vectors.ipynb
 │       ├── 8. combine_area_polygons_by_coords.py
-│       
+│       └── organize_onedrive.py
 ├── docs/
 │   ├── workflow_documentation.md
 │   ├── onedrive_setup.md
@@ -96,12 +96,6 @@ earthengine authenticate
    - `6. extract_polygons.ipynb`: Extract specific polygons
    - `7. combine_vectors.ipynb`: Combine vector files
    - `8. combine_area_polygons_by_coords.py`: Combine area polygons
-
-### 3. Data Organization
-Use the `organize_onedrive.py` script to:
-- Create the proper folder structure in OneDrive
-- Organize outputs into appropriate folders
-- Maintain consistent data organization
 
 ## Documentation
 - `workflow_documentation.md`: Detailed workflow steps and processes
