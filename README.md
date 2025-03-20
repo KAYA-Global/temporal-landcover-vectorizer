@@ -17,7 +17,7 @@ temporal-landcover-vectorizer/
 │       ├── 6. extract_polygons.ipynb
 │       ├── 7. combine_vectors.ipynb
 │       ├── 8. combine_area_polygons_by_coords.py
-│       └── organize_onedrive.py
+│       
 ├── docs/
 │   ├── workflow_documentation.md
 │   ├── onedrive_setup.md
