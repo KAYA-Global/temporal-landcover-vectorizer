@@ -92,10 +92,27 @@ This document describes the workflow for processing temporal land cover data usi
    - Temporal data merging
    - Spatial analysis
 
-3. Output Generation
-   - Vector files
-   - CSV data
-   - Analysis results
+3. Output Generation and Storage
+   - Vector files and CSV data are generated locally
+   - Results are organized by analysis date and type
+   - Final outputs are stored in a dedicated OneDrive folder for:
+     - Better collaboration and sharing
+     - Version control of large datasets
+     - Backup and recovery
+   - The repository maintains only the most recent analysis results in the `data/landcover_analysis_YYYY` folder
+
+## Data Organization
+The OneDrive folder structure follows this pattern:
+```
+OneDrive/
+└── temporal_landcover_analysis/
+    ├── analysis_2024/
+    │   ├── vector_data/
+    │   ├── csv_data/
+    │   └── analysis_results/
+    └── previous_analyses/
+        └── [year]/
+```
 
 ## Dependencies
 - Google Earth Engine

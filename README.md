@@ -16,15 +16,34 @@ temporal-landcover-vectorizer/
 │       ├── 5. stratified_biomass_sampler.ipynb
 │       ├── 6. extract_polygons.ipynb
 │       ├── 7. combine_vectors.ipynb
-│       └── 8. combine_area_polygons_by_coords.py
+│       ├── 8. combine_area_polygons_by_coords.py
+│       └── organize_onedrive.py
 ├── docs/
-│   └── workflow_documentation.md
-├── data/
-│   ├── input/
-│   └── output/
-├── requirements.txt
+│   ├── workflow_documentation.md
+│   ├── onedrive_setup.md
+│   └── onedrive_readme_template.md
 └── README.md
 ```
+
+## Data Storage
+Analysis outputs and large datasets are stored in a dedicated OneDrive folder for better organization and collaboration. The data folder structure is:
+
+```
+Temporal Land Cover Analysis/
+└── analysis_2024/
+    ├── vector_data/      # Vector files (points, polygons)
+    ├── csv_data/         # Raw and processed CSV data
+    │   ├── raw/          # Original data files
+    │   └── processed/    # Processed data files
+    └── analysis_results/ # Analysis outputs and reports
+```
+
+The OneDrive folder is located at:
+```
+C:\Users\galag\KAYA Climate Solutions GmbH\Climate - Documents\General\Map projects\Wirong\Temporal Land Cover Analysis
+```
+
+For access to the data and detailed folder structure, see `docs/onedrive_setup.md`.
 
 ## Features
 - NDVI time series analysis using Landsat imagery
@@ -78,15 +97,16 @@ earthengine authenticate
    - `7. combine_vectors.ipynb`: Combine vector files
    - `8. combine_area_polygons_by_coords.py`: Combine area polygons
 
-## Output
-The workflow generates:
-- Vector files (points and polygons)
-- CSV data with temporal information
-- Analysis results and statistics
-- Combined area calculations
+### 3. Data Organization
+Use the `organize_onedrive.py` script to:
+- Create the proper folder structure in OneDrive
+- Organize outputs into appropriate folders
+- Maintain consistent data organization
 
 ## Documentation
-Detailed workflow documentation is available in `docs/workflow_documentation.md`
+- `workflow_documentation.md`: Detailed workflow steps and processes
+- `onedrive_setup.md`: OneDrive folder structure and setup guide
+- `onedrive_readme_template.md`: Template for OneDrive folder documentation
 
 ## Contributing
 1. Fork the repository
