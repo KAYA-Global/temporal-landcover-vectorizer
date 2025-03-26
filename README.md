@@ -9,19 +9,21 @@ temporal-landcover-vectorizer/
 ├── scripts/
 │   ├── gee/
 │   │   ├── 1. Landsat_NDVI_SpecificYears.js
-│   │   └── 2. ndvi_landcover_masking_export.js
+│   │   ├── 2. ndvi_landcover_masking_export.js
+│   │   ├── 3. AGB_Model_Sentinel2_Template.js
+│   │   └── 4. AGB_Model_Comparison_vCCI.js
 │   └── python/
-│       ├── 3. raster_to_vector_with_csv.ipynb
-│       ├── 4. merge_csv.ipynb
-│       ├── 5. stratified_biomass_sampler.ipynb
-│       ├── 6. extract_polygons.ipynb
-│       ├── 7. combine_vectors.ipynb
-│       ├── 8. combine_area_polygons_by_coords.py
-│       └── organize_onedrive.py
+│       ├── 5. raster_to_vector_with_csv.ipynb
+│       ├── 6. merge_csv.ipynb
+│       ├── 7. stratified_biomass_sampler.ipynb
+│       ├── 8. extract_polygons.ipynb
+│       ├── 9. combine_vectors.ipynb
+│       └── 10. combine_area_polygons_by_coords.py
 ├── docs/
 │   ├── workflow_documentation.md
 │   ├── onedrive_setup.md
-│   └── onedrive_readme_template.md
+│   ├── onedrive_readme_template.md
+│   └── agb_model_documentation.md
 └── README.md
 ```
 
@@ -87,20 +89,23 @@ earthengine authenticate
 1. Open the GEE scripts in the Google Earth Engine Code Editor
 2. Run `1. Landsat_NDVI_SpecificYears.js` to extract NDVI values
 3. Run `2. ndvi_landcover_masking_export.js` to apply land cover masking
+4. Run `3. AGB_Model_Sentinel2_Template.js` to compute above-ground biomass
+5. Run `4. AGB_Model_Comparison_vCCI.js` to compare with ESA CCI data
 
 ### 2. Python Processing
 1. Run the Python scripts in sequence:
-   - `3. raster_to_vector_with_csv.ipynb`: Convert raster data to vector format
-   - `4. merge_csv.ipynb`: Merge temporal data
-   - `5. stratified_biomass_sampler.ipynb`: Perform biomass sampling
-   - `6. extract_polygons.ipynb`: Extract specific polygons
-   - `7. combine_vectors.ipynb`: Combine vector files
-   - `8. combine_area_polygons_by_coords.py`: Combine area polygons
+   - `5. raster_to_vector_with_csv.ipynb`: Convert raster data to vector format
+   - `6. merge_csv.ipynb`: Merge temporal data
+   - `7. stratified_biomass_sampler.ipynb`: Perform biomass sampling
+   - `8. extract_polygons.ipynb`: Extract specific polygons
+   - `9. combine_vectors.ipynb`: Combine vector files
+   - `10. combine_area_polygons_by_coords.py`: Combine area polygons
 
 ## Documentation
 - `workflow_documentation.md`: Detailed workflow steps and processes
 - `onedrive_setup.md`: OneDrive folder structure and setup guide
 - `onedrive_readme_template.md`: Template for OneDrive folder documentation
+- `agb_model_documentation.md`: Documentation for the AGB estimation model and validation
 
 ## Contributing
 1. Fork the repository
