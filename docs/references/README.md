@@ -6,9 +6,9 @@ This directory contains research papers and other reference materials that infor
 
 ### Above-Ground Biomass Estimation
 
-1. **2022_Rojas_EstimationAGBTropicalDryForests.pdf**  
-   *Estimation of aboveground biomass in tropical dry forests using Sentinel-2 and biophysical variables derived from remote sensing data*  
-   Authors: M. R., J. M., et al.  
+1. **2022_Muhe_EstimationAGBTropicalAfroMontane.pdf**  
+   *Estimation of above‑ground biomass in tropical afro‑montane forest using Sentinel‑2 derived indices*  
+   Authors: Seid Muhe and Mekuria Argaw  
    Journal: Environmental Monitoring and Assessment (2022)  
    DOI: [10.1007/s40068-022-00250-y](https://doi.org/10.1007/s40068-022-00250-y)  
    
