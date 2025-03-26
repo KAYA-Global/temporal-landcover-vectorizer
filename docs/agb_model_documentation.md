@@ -1,7 +1,12 @@
 # Above-Ground Biomass (AGB) Model Documentation
 
 ## Overview
-This document describes the implementation of an above-ground biomass (AGB) estimation model based on the publication "Estimation of aboveground biomass in tropical dry forests using Sentinel-2 and biophysical variables derived from remote sensing data" (M. R., J. M., et al., 2022).
+This document describes the implementation of an above-ground biomass (AGB) estimation model based on the publication:
+
+> **"Estimation of aboveground biomass in tropical dry forests using Sentinel-2 and biophysical variables derived from remote sensing data"**  
+> *M. R., J. M., et al. (2022), Environmental Monitoring and Assessment*  
+> DOI: [10.1007/s40068-022-00250-y](https://doi.org/10.1007/s40068-022-00250-y)  
+> [View PDF](../docs/references/2022_Rojas_EstimationAGBTropicalDryForests.pdf)
 
 ## Script Sequence
 1. `3. AGB_Model_Sentinel2_Template.js`: Implements the AGB estimation model using Sentinel-2 data
